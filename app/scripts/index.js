@@ -29,5 +29,5 @@ _.each(albums, function(album){
       owner: 'Dan'
   };
 
-  $('#album-container').append(template(album));
+  $('#album-container').append(template(context));
 });
