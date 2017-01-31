@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4 2 handlebars</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <h1 class="well">Handlebars Demo</h1>
+
+    <div class="container">
+      <div id="album-container" class="row">
+        <!-- <div class="col-md-6">
+          <h2>First Album</h2>
+          <img src="http://unsplash.it/175/175" alt="">
+        </div>
+
+        <div class="col-md-6">
+          <h2>Second Album</h2>
+          <img src="http://unsplash.it/175/175" alt="">
+        </div> -->
+      </div>
+    </div>
+
+    <script id="album-template" type="text/x-handlebars-template">
+      <div class="col-md-6">
+        <h2>{{owner}}'s {{title}}</h2>
+        <img src="{{ image }}" alt="">
+      </div>
+    </script>
+
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
